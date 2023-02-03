@@ -1,0 +1,365 @@
+<html>
+  <head>
+    <meta name="description" content="Hello this is my first web page!." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/tingle.css">
+    <title>Netflix Mexico</title>
+    <link rel="icon" href="http://pngimg.com/uploads/netflix/small/netflix_PNG15.png">
+
+  </head>
+  <body onload="modal.open();" >
+
+
+    <header>
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img
+            src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+            alt="logo"
+            class="brand__logo"
+          />
+        </div>
+
+        <div class="navbar__nav__items">
+          <div class="nav__item">
+            <div class="dropdown__container">
+              <i class="fas fa-globe"></i>
+              <select
+                name="languages"
+                id="languagesSelect"
+                class="language__drop__down"
+              >
+                <option value="english" selected>Ingles</option>
+                <option value="hindi">Español</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="nav__item">
+            <a href="./login.html"><button class="signin__button">Iniciar Sesion</button></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__bg__image__container">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+            alt="BG hero image"
+            class="hero__bg__image"
+          />
+        </div>
+        <div class="hero__bg__overlay"></div>
+
+        <div class="hero__card">
+          <h1 id="hero" class="hero__title">
+            Peliculas ilimitadas TV,<br />
+            Espectaculos y mas.
+          </h1>
+          <p class="hero__subtitle">Mire en cualquier lugar y cancele en cualquier momento.</p>
+          <p class="hero__description">
+            ¿Listo para ver? Ingrese su correo electrónico para crear o reiniciar su
+            membresía.
+          </p>
+
+          <div class="email__form__container">
+            <div class="form__container">
+              <input type="email" class="email__input" placeholder=" " />
+              <label class="email__label">Email</label>
+            </div>
+            <button class="primary__button">
+              Comenzar <i class="fal fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="features__container">
+        <!-- Feature 1 -->
+        <div class="feature">
+          <div class="feature__details">
+            <h3 class="feature__title">Disfruta en tu TV</h3>
+            <h5 class="feature__sub__title">
+                Ver en televisores inteligentes, PlayStation, Xbox, Chromecast, Apple TV,
+                Reproductores de Blu-ray y más.
+            </h5>
+          </div>
+          <div class="feature__image__container">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+              alt="Feature image"
+              class="feature__image"
+            />
+            <div class="feature__backgroud__video__container">
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                class="feature__backgroud__video"
+              >
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature">
+          <div class="feature__details">
+            <h3 class="feature__title">
+                Descarga tus programas para verlos sin conexión.
+            </h3>
+            <h5 class="feature__sub__title">
+                Guarda tus favoritos fácilmente y siempre ten algo que ver.
+            </h5>
+          </div>
+          <div class="feature__image__container">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+              alt="Feature image"
+              class="feature__image"
+            />
+            <div class="feature__2__poster__container">
+              <div class="poster__container">
+                <img
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+                  alt="poster"
+                  class="poster"
+                />
+              </div>
+              <div class="poster__details">
+                <h4>Cosa más extraña</h4>
+                <h6>Descargando...</h6>
+              </div>
+              <div class="download__gif__container">
+                <img
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
+                  alt="downloading gif"
+                  class="gif"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature">
+          <div class="feature__details">
+            <h3 class="feature__title">Mira en todas partes.</h3>
+            <h5 class="feature__sub__title">
+                Transmita películas y programas de TV ilimitados en su teléfono, tableta,
+                ordenador portátil, y TV.
+            </h5>
+          </div>
+          <div class="feature__image__container feature__3__image__container">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+              alt="Feature image"
+              class="feature__image feature__3__image"
+            />
+            <div
+              class="
+                feature__backgroud__video__container
+                feature__3__backgroud__video__container
+              "
+            >
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                class="feature__backgroud__video feature__3__backgroud__video"
+              >
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature">
+          <div class="feature__details">
+            <h3 class="feature__title">Crear perfiles para niños.</h3>
+            <h5 class="feature__sub__title">
+                Envía a los niños a aventuras con sus personajes favoritos en un
+                Espacio hecho solo para ellos, gratis con su membresía.
+            </h5>
+          </div>
+          <div class="feature__image__container">
+            <img
+              src="https://occ-0-4023-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf"
+              alt="Feature image"
+              class="feature__image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="FAQ__list__container">
+        <h1 class="FAQ__heading">Preguntas frecuentes</h1>
+        <div class="FAQ__list">
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+              What is Netflix?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Netflix es un servicio de streaming que ofrece una amplia variedad de
+                programas de televisión, películas, anime, documentales y más galardonados:
+                en miles de dispositivos conectados a Internet.
+              </p>
+              <p>
+                Puedes ver todo lo que quieras, cuando quieras, sin un
+                Anuncio único: todo por un precio mensual bajo. Siempre hay
+                algo nuevo por descubrir, y se agregan nuevos programas de televisión y películas
+                ¡Cada semana!
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+                ¿Cuánto cuesta Netflix?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Mira Netflix en tu smartphone, tablet, Smart TV, portátil o
+                dispositivo de transmisión, todo por una tarifa mensual fija. Gama de planes
+                de $ 14 a $ 25 al mes. Sin costes extras, sin contratos.
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+                ¿Dónde puedo verlo?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Mira en cualquier lugar, en cualquier momento, en un número ilimitado de dispositivos. Firmar
+                en con su cuenta de Netflix para ver instantáneamente en la web en
+                netflix.com desde su computadora personal o en cualquier
+                dispositivo conectado a Internet que ofrece la aplicación de Netflix, que incluye
+                televisores inteligentes, teléfonos inteligentes, tabletas, reproductores multimedia de transmisión y
+                Videojuegos.
+              </p>
+              <p>
+                También puede descargar sus programas favoritos con el iOS,
+                Aplicación para Android o Windows 10. Usa descargas para ver mientras estás
+                sobre la marcha y sin conexión a Internet. Lleva Netflix con
+                usted en cualquier lugar.
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+                ¿Cómo cancelo?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Netflix es flexible. No hay contratos molestos ni compromisos. Puede cancelar fácilmente su cuenta en línea con dos clics. No hay cargos por cancelación: inicie o detenga su cuenta en cualquier momento.
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+                ¿Qué puedo ver desde Netflix?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Netflix tiene una extensa biblioteca de largometrajes, documentales, programas de televisión, anime, originales galardonados de Netflix y más. Mira todo lo que quieras, cuando quieras.
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+                ¿Netflix es bueno para los niños?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>La experiencia de Netflix Kids está incluida en tu membresía para que los padres tengan el control mientras los niños disfrutan de programas de televisión y películas para toda la familia en su propio espacio.</p>
+              <p>Los perfiles de los niños vienen con controles parentales protegidos por PIN que le permiten restringir la clasificación de madurez del contenido que los niños pueden ver y bloquear títulos específicos que no desea que los niños vean.</p>
+            </div>
+          </div>
+        </div>
+        <div class="FAQ__get__started__email">
+          <h3>
+            ¿Listo para ver? Ingrese su correo electrónico para crear o reiniciar su
+            membresía.
+          </h3>
+          <div class="email__form__container">
+            <div class="form__container">
+              <input type="email" class="email__input" placeholder=" " />
+              <label class="email__label">Email</label>
+            </div>
+            <a href="./registrar.html"><button onclick="myFunction()" class="primary__button">
+              Comenzar <i class="fal fa-chevron-right"></i>
+            </button></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__row__1">
+        <h4>¿Preguntas? Llamar 333-851-210-1375</h4>
+      </div>
+      <div class="footer__row__2">
+        <div class="column__1">
+          <p>FAQ</p>
+          <p>Relaciones con Inversionistas</p>
+          <p>Privacidad</p>
+          <p>Prueba de velocidad</p>
+        </div>
+        <div class="column__2">
+          <p>Centro de prueba</p>
+          <p>Trabajos</p>
+          <p>Preferencias de Cookies</p>
+          <p>Noticias Legales</p>
+        </div>
+        <div class="column__3">
+          <p>Cuenta</p>
+          <p>Formas de ver</p>
+          <p>Información Corporativa</p>
+          <p>Solo en Netflix</p>
+        </div>
+        <div class="column__4">
+          <p>Centro de prensa</p>
+          <p>Terminos de Uso</p>
+          <p>Contactenos</p>
+        </div>
+      </div>
+      <div class="footer__row__3">
+        <div class="dropdown__container">
+          <i class="fas fa-globe"></i>
+          <select
+            name="languages"
+            id="languagesSelect"
+            class="language__drop__down"
+          >
+            <option value="english" selected>Ingles</option>
+            <option value="hindi">Español</option>
+          </select>
+        </div>
+      </div>
+      <div class="footer__row__4">
+        <p>Netflix Mexico</p>
+      </div>
+    </footer>
+
+    <script src="./js/tingle.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
